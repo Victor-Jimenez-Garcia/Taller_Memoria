@@ -17,7 +17,7 @@
             
         \vspace{0.5cm}
         \LARGE
-        Taller de Memoria
+        Taller Memoria
             
         \vspace{1.5cm}
             
@@ -39,44 +39,19 @@
 \tableofcontents
 
 \section{¿Qué es la memoria del computador?}
-Esta es la primera sección, podemos agregar algunos elementos adicionales y todo será escrito correctamente. Más aún, si una palabra es demasiado larga y tiene que ser truncada, babel tratará de truncarla correctamente dependiendo del idioma.
+Es el dispositivo de almacenamiento donde se guardan las instrucciones que luego son manejadas por el microprocesador, la memoria guarda estas instrucciones temporalmente hasta que el microprocesador las retira de ella con el fin de que las órdenes dadas por el usuario se puedan ejecutar correctamente.
 
 \section{Mencione los tipos de memoria que conoce y haga una pequeña descripción de cada tipo} \label{contenido}
+Memoria RAM: Parte principal del computador dende se guardan los programas y datos que luego se pueden realizar operaciones de lectura y escritura.
+Memoria Caché: Área de almacenamiento dedicada a los datos a los cuales el microprocesador accede continuamente para su recuperacion a gran velocidad.
+Memoria VRAM: Es un tipo de memoria especialmete diseñada para llevar a cabo unas tareas específicas en aplicaciones gráficas y videojuegos.
 
-Esta sección es para ver qué pasa con los comandos 
-que definen texto
-
-El paquete también agrega un comportamiento especial 
-a <<estas marcas para hacer citas textuales>> tal como 
-lo indican las reglas de la RAE. \cite{dirac}
-
-\begin{lstlisting}
-#include <stdio.h>
-#define N 10
-/* Block
- * comment */
-
-int main()
-{
-    int i;
-
-    // Line comment.
-    puts("Hello world!");
-    
-    for (i = 0; i < N; i++)
-    {
-        puts("LaTeX is also great for programmers!");
-    }
-
-    return 0;
-}
-\end{lstlisting}
-
-
-En la sección de teoremas (\ref{contenido})
 \section{Describa la manera como se gestiona la memoria en un computador}
+Se envía una orden (dada por el ususario por ejemplo) y ésta se almacena en la memoria, luego el microprocesador recibe el aviso de que allí hay una instrucción, la toma y la procesa, después la retira de la memoria para que no ocupe un espacio que ya no se necesita, y de esa forma este proceso se repite las veces en que hay una instrucción en la memoria.
 
 \section{¿Qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante?}
+Tiene que ver con su capacidad de almacenamiento, por ejemplo, la memoria Caché, que tiene en promedio 12 Mb es mucho mas rápida que una memoria RAM, lo mismo ocurre en el caso de RAM vs disco duro, esto es importante debido a que de esta forma es mucho mas fácil para el microprocesador acceder a la informacón que haya almacenada allí, si todo estuviera en el disco duro, los procesos serían mucho mas lentos que si estuvieran almacenados en la memoria RAM puesto que en el disco duro es mas dificil acceder a la información debido a la rotación de los discos internos.
+
 
 \section{Conclusión} \label{conclulsion}
 
