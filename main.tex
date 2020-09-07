@@ -37,7 +37,8 @@
 \end{titlepage}
 
 \tableofcontents
-
+\section{Introducción}
+En este documento se pretende profundizar un poco acerca de la memoria y algunas de sus funciones, cómo trabaja en conjunto con el microprocesador, el disco duro y demás componentes.
 \section{¿Qué es la memoria del computador?}
 Es el dispositivo de almacenamiento donde se guardan las instrucciones que luego son manejadas por el microprocesador, la memoria guarda estas instrucciones temporalmente hasta que el microprocesador las retira de ella con el fin de que las órdenes dadas por el usuario se puedan ejecutar correctamente.
 \cite{memoria}
@@ -50,8 +51,8 @@ Memoria VRAM: Es un tipo de memoria especialmete diseñada para llevar a cabo un
 Se envía una orden (dada por el ususario por ejemplo) y ésta se almacena en la memoria, luego el microprocesador recibe el aviso de que allí hay una instrucción, la toma y la procesa, después la retira de la memoria para que no ocupe un espacio que ya no se necesita, y de esa forma este proceso se repite las veces en que hay una instrucción en la memoria.
 \cite{memoria}
 \section{¿Qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante?}
-Tiene que ver con su capacidad de almacenamiento, por ejemplo, la memoria Caché, que tiene en promedio 12 Mb es mucho mas rápida que una memoria RAM, lo mismo ocurre en el caso de RAM vs disco duro, esto es importante debido a que de esta forma es mucho mas fácil para el microprocesador acceder a la informacón que haya almacenada allí, si todo estuviera en el disco duro, los procesos serían mucho mas lentos que si estuvieran almacenados en la memoria RAM puesto que en el disco duro es mas dificil acceder a la información debido a la rotación de los discos internos.
-\cite{memoria}
+Hay varias cosas que afectan una memoria, la capacidad, la frecuencia y la latencia; si hay mucha capacidad, entonces podremos almacenar datos sin tener que recurrir a otras técinas que disminuyan la calidad del rendimiento; por otro lado está la frecuencia, ya que cuanto mayor sea la velocidad de la memoria, más rápido podrá trabajar los datos; luego está la latencia, que es el tiempo que transcurre desde que la memoria recibe un comando, hasta que lo ejecuta, es decir, es el intervalo de tiempo entre las dos acciones; cuanto más bajo sea este valor, mejor y se calcula multiplicando el tiempo de ciclo del reloj, en nanosegundos, por el número de ciclos de reloj. Entonces, a la hora de realizar tareas pesadas (edición multimedia, virtualización, jugar, etc) es importante mirar estas características y encontrar un buen equilibrio entre ellas para que haya un óptimo rendimiento.
+\cite{rendimiento}
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}
