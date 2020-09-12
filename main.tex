@@ -39,18 +39,23 @@
 \tableofcontents
 \section{Introducción}
 En este documento se pretende profundizar un poco acerca de la memoria y algunas de sus funciones, cómo trabaja en conjunto con el microprocesador, el disco duro y demás componentes.
-\section{¿Qué es la memoria del computador?}
+\section{Contenido}
+\subsection{¿Qué es la memoria del computador?}
 Es el dispositivo de almacenamiento donde se guardan las instrucciones que luego son manejadas por el microprocesador, la memoria guarda estas instrucciones temporalmente hasta que el microprocesador las retira de ella con el fin de que las órdenes dadas por el usuario se puedan ejecutar correctamente.
 \cite{memoria}
-\section{Mencione los tipos de memoria que conoce y haga una pequeña descripción de cada tipo} \label{contenido}
-\textbf{Memoria RAM:} Parte principal del computador donde se guardan los programas y datos que luego se pueden realizar operaciones de lectura y escritura.
-\textbf{Memoria Caché:} Área de almacenamiento dedicada a los datos a los cuales el microprocesador accede continuamente para su recuperacion a gran velocidad.
-\textbf{Memoria VRAM:} Es un tipo de memoria especialmete diseñada para llevar a cabo unas tareas específicas en aplicaciones gráficas y videojuegos.
+\subsection{Mencione los tipos de memoria que conoce y haga una pequeña descripción de cada tipo} \label{contenido}
+\textbf{Memoria RAM:}
+La memoria RAM es el tipo de memoria más importante del computador, su nombre representa las siglas de Random Access Memory (Memoria de Acceso Aleatorio); la razón de dicho nombre es porque la misma está dividida en celdas de memoria donde se almacenan cada uno de los bits o pulsos eléctricos (que representan los 1 y 0) y a las cuales se puede acceder directamente indistintamente de su posición o dirección.\\
+La memoria RAM está dividida en celdas en donde se almacenan temporalmente cada uno de los bits que componen los bytes de la información con la que trabaja el microprocesador.
+\cite{memoria}\\
+\textbf{Memoria Caché:} La memoria Caché se utiliza para trabajar con los datos e instrucciones que el microprocesador ve que se utilizan más seguido, entonces para no tener que ir a buscarlos una y otra vez de la memoria RAM que es más lenta, coloca una copia de esos datos en la memoria Caché para tenerlos a mano.
+\cite{memoria}\\
+\textbf{Memoria VRAM:} Es un tipo de memoria especialmete diseñada para llevar a cabo unas tareas específicas en aplicaciones gráficas y videojuegos. Puesto que el aumento de la calidad gráfica ha llevado a que el ritmo al que requieren los datos necesarios para mostrar correctamente los gráficos por pantalla (texturas, efectos, modelos 3D) sea extremadamente alto. Esto ha desembocado en la imperiosa necesidad de disponer de un gran ancho de banda, que se ha conseguido a base de aumentar de manera sustancial la velocidad de la memoria y  como las memorias tradicionales se calentaban y consumían en exceso cuando su velocidad aumentaba en la medida que se iba haciendo necesario en cada momento, finalmente se terminaron desarrollando nuevas arquitecturas, bifurcando (dividiendo en dos) para siempre la memoria en dos líneas: memoria RAM y VRAM.
 \cite{vram}
-\section{Describa la manera como se gestiona la memoria en un computador}
+\subsection{Describa la manera como se gestiona la memoria en un computador}
 Se envía una orden (dada por el ususario por ejemplo) y ésta se almacena en la memoria, luego el microprocesador recibe el aviso de que allí hay una instrucción, la toma y la procesa, después la retira de la memoria para que no ocupe un espacio que ya no se necesita, y de esa forma este proceso se repite las veces en que hay una instrucción en la memoria.
 \cite{memoria}
-\section{¿Qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante?}
+\subsection{¿Qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante?}
 Hay varias cosas que afectan una memoria, la capacidad, la frecuencia y la latencia; si hay mucha capacidad, entonces podremos almacenar datos sin tener que recurrir a otras técinas que disminuyan la calidad del rendimiento; por otro lado está la frecuencia, ya que cuanto mayor sea la velocidad de la memoria, más rápido podrá trabajar los datos; luego está la latencia, que es el tiempo que transcurre desde que la memoria recibe un comando, hasta que lo ejecuta, es decir, es el intervalo de tiempo entre las dos acciones; cuanto más bajo sea este valor, mejor y se calcula multiplicando el tiempo de ciclo del reloj, en nanosegundos, por el número de ciclos de reloj. Entonces, a la hora de realizar tareas pesadas (edición multimedia, virtualización, jugar, etc) es importante mirar estas características y encontrar un buen equilibrio entre ellas para que haya un óptimo rendimiento.
 \cite{rendimiento}
 
